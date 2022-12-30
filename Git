@@ -1,0 +1,37 @@
+GITHUB
+-git pull
+#actualiza local desde nube
+-git fetch origin
+#Atualizar directorio desde github
+
+**********************************
+-git add . 
+#Agrega todos los archivos al commit
+-git add <nombre archivo> 
+#agrega un archivo especifico al commit
+-git rm <nombre archivo> 
+#elimina el archivo 
+
+-git commit -m  “Mensaje” 
+#guarda los cambios seleccionados en add
+**********************************
+
+-git push 
+# actualizar la nube GITHUB
+
+**********************************
+-git branch
+#comprobar branch actual
+-git checkout #devel
+#cambiar de branch
+-git merge #devel
+# Combinar branch
+-git push --set-upstream origin #devel
+# Subir branch
+**********************************
+-git branch -a
+#muestra todas las ramas
+-git branch -d #devel
+#borra la branch devel
+-git push origin -d #devel
+#elimina directorio de rama eliminada
