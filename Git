@@ -7,9 +7,9 @@ GITHUB
 **********************************
 -git add . 
 #Agrega todos los archivos al commit
--git add <nombre archivo> 
+-git add [nombre archivo]
 #agrega un archivo especifico al commit
--git rm <nombre archivo> 
+-git rm [nombre archivo]
 #elimina el archivo 
 
 -git commit -m  “Mensaje” 
@@ -22,16 +22,16 @@ GITHUB
 **********************************
 -git branch
 #comprobar branch actual
--git checkout #devel
+-git checkout [nombre de la rama]
 #cambiar de branch
--git merge #devel
+-git merge [nombre de la rama]
 # Combinar branch
--git push --set-upstream origin #devel
+-git push --set-upstream origin [nombre de la rama]
 # Subir branch
 **********************************
 -git branch -a
 #muestra todas las ramas
--git branch -d #devel
-#borra la branch devel
--git push origin -d #devel
+-git branch -d [nombre de la rama]
+#borra la branch 
+-git push origin -d [nombre de la rama]
 #elimina directorio de rama eliminada
