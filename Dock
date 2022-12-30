@@ -1,0 +1,18 @@
+DOCKER
+************************************************************
+-docker run -ti [Nombre imagen]
+#contenedor interactivo interactiva
+
+-Docker run -d [Nombre imagen]
+#Contenedor "daemon"
+
+-docker run -d --name nombre_del_contenedor ubuntu
+#Dar nombre al contenedor
+
+************************************************************
+-docker rm [ID]
+#borrar contenedor
+
+************************************************************
+
+************************************************************

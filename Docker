@@ -1,7 +1,0 @@
-DOCKER
-
-docker run -it [Nombre imagen]
-#contenedor interactivo interactiva
-
-Docker run -d [Nombre imagen]
-#Contenedor "daemon"
