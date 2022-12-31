@@ -6,13 +6,15 @@ DOCKER
 -Docker run -d [Nombre imagen]
 #Contenedor "daemon"
 
--docker run -d --name nombre_del_contenedor ubuntu
+-docker run -d --name nombre_del_contenedor [Nombre imagen]
 #Dar nombre al contenedor
 
 ************************************************************
 -docker rm [ID]
 #borrar contenedor
 
+-docker rmi [Nombre imagen]
+#borra imagen
 ************************************************************
 
 ************************************************************
