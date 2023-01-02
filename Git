@@ -35,3 +35,4 @@ GITHUB
 #borra la branch 
 -git push origin -d [nombre de la rama]
 #elimina directorio de rama eliminada
+-
