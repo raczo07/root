@@ -5,3 +5,7 @@ RUN apt-get update \
 
 ADD Data/datos.txt /home/Documentos/datos.txt
 ADD Data/saludos.py /home/Documentos/saludos.py
+
+ENV variable1="valor1" variable2="valor2"
+
+CMD ["uname"]
