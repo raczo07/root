@@ -1,6 +1,6 @@
 DOCKER
 ************************************************************
--docker run -ti [Nombre imagen]
+-docker run -ti --name [Nombre maquina v] --rm [Nombre imagen]
 #contenedor interactivo interactiva
 
 -Docker run -d [Nombre imagen]
@@ -15,6 +15,10 @@ DOCKER
 
 -docker rmi [Nombre imagen]
 #borra imagen
+
+-docker build -t [name]:[TAG] .
+#crear imagen personalizada desde Docker file
 ************************************************************
+
 
 ************************************************************

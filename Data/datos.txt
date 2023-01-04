@@ -1,0 +1,1 @@
+nombre  cedula  edad    genero
