@@ -18,6 +18,8 @@ DOCKER
 
 -docker build -t [name]:[TAG] .
 #crear imagen personalizada desde Docker file
+-docker build --no-cache=true -t [name]:[TAG] .
+#actualizar imagen con ficheros incluidos
 ************************************************************
 
 -docker run -ti --rm -v /home/raczo07:/Data ubuntu:latest
