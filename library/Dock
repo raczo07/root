@@ -20,5 +20,6 @@ DOCKER
 #crear imagen personalizada desde Docker file
 ************************************************************
 
-
+-docker run -ti --rm -v /home/raczo07:/Data ubuntu:latest
+#conecta carpeta Data en imagen
 ************************************************************
