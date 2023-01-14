@@ -1,0 +1,7 @@
+PostgreSQL
+**********************************
+docker run -p5432:5432 -v /home/raczo07/Data/PostgreSQL:/var/lib/postgresql/data --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+#Iniciar contenedor 
+**********************************
+-docker exec -it [Conteiner id] psql -U postgres
+#conectar con contenedor docker

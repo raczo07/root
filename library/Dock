@@ -25,3 +25,6 @@ DOCKER
 -docker run -ti --rm -v /home/raczo07:/Data ubuntu:latest
 #conecta carpeta Data en imagen
 ************************************************************
+-docker exec
+#conecta carpeta Data en imagen
+************************************************************
