@@ -1,29 +1,28 @@
 version: "3.8"
-
 services:
-  postgres:
-    container_name: BD1
+  db:
     image: postgres
+    container_name: local_pgdb
     restart: always
-    ports: 
-      - 5432:5432
-    volumes:
-      - /home/raczo07/Data/PostgreSQL:/var/lib/postgresql/data
+    ports:
+      - "54320:5432"
     environment:
-      - DATABASE_HOST= 127.0.0.1
-      - POSTGRES_USER= root
-      - POSTGRES_PASSWORD= root
-      - POSTGRES_BD= root
-  
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - local_pgdata:/var/lib/postgresql/data
   pgadmin:
     image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    ports:
+      - "80:80"
     environment:
-      PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
-      PGADMIN_DEFAULT_PASSWORD: "admin"
-      ports:
-        "80:80"
-      depends_on:
-        -postgres
+      PGADMIN_DEFAULT_EMAIL: raczo07@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
 
-
-  
+volumes:
+  local_pgdata:
+  pgadmin-data:
