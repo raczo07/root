@@ -14,8 +14,8 @@ DOCKER
 #borrar contenedor
 
 -docker rmi [Nombre imagen]
-#borra imagen
-
+#borra imagenimagenimagenimagenimagenimagenimagen
+imagen
 -docker build -t [name]:[TAG] .
 #crear imagen personalizada desde Docker file
 -docker build --no-cache=true -t [name]:[TAG] .
