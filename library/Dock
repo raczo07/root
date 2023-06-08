@@ -27,4 +27,7 @@ imagen
 ************************************************************
 -docker exec
 #conecta carpeta Data en imagen
+
+-docker-compose up
+#Ejecuta archivo .yml
 ************************************************************
