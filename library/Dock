@@ -30,4 +30,7 @@ imagen
 
 -docker-compose up
 #Ejecuta archivo .yml
+
+-ifconfig 
+#ver ip en linux
 ************************************************************
