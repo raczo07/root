@@ -1,0 +1,18 @@
+services:
+  db:
+    image: mysql
+    container_name: local_mysql
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: raczo07
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - local_pgdata:/var/lib/postgresql/data
+
+
+
+
+
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
